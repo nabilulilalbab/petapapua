@@ -3,6 +3,7 @@ var wms_layers = [];
 
         var lyr_OpenStreetMap_0 = new ol.layer.Tile({
             'title': 'OpenStreetMap',
+            'type':'base',
             'opacity': 1.000000,
             
             
@@ -33,7 +34,7 @@ lyr_OpenStreetMap_0.setVisible(true);lyr_LapakGIS_Batas_Kabupaten_2024_1.setVisi
 var layersList = [lyr_OpenStreetMap_0,lyr_LapakGIS_Batas_Kabupaten_2024_1];
 lyr_LapakGIS_Batas_Kabupaten_2024_1.set('fieldAliases', {'kabupaten': 'kabupaten', 'provinsi': 'provinsi', '2022_makanan2022': '2022_makanan2022', '2022_bukanmakanan2022': '2022_bukanmakanan2022', '2023_makanan2023': '2023_makanan2023', '2023_bukanmakanan2023': '2023_bukanmakanan2023', '2024_makanan2024': '2024_makanan2024', '2024_bukanmakanan2024': '2024_bukanmakanan2024', });
 lyr_LapakGIS_Batas_Kabupaten_2024_1.set('fieldImages', {'kabupaten': 'TextEdit', 'provinsi': 'TextEdit', '2022_makanan2022': 'TextEdit', '2022_bukanmakanan2022': 'TextEdit', '2023_makanan2023': 'TextEdit', '2023_bukanmakanan2023': 'TextEdit', '2024_makanan2024': 'TextEdit', '2024_bukanmakanan2024': 'TextEdit', });
-lyr_LapakGIS_Batas_Kabupaten_2024_1.set('fieldLabels', {'kabupaten': 'inline label - always visible', 'provinsi': 'inline label - always visible', '2022_makanan2022': 'inline label - always visible', '2022_bukanmakanan2022': 'inline label - always visible', '2023_makanan2023': 'inline label - always visible', '2023_bukanmakanan2023': 'inline label - always visible', '2024_makanan2024': 'inline label - always visible', '2024_bukanmakanan2024': 'inline label - always visible', });
+lyr_LapakGIS_Batas_Kabupaten_2024_1.set('fieldLabels', {'kabupaten': 'inline label - visible with data', 'provinsi': 'inline label - visible with data', '2022_makanan2022': 'inline label - visible with data', '2022_bukanmakanan2022': 'inline label - visible with data', '2023_makanan2023': 'inline label - visible with data', '2023_bukanmakanan2023': 'inline label - visible with data', '2024_makanan2024': 'inline label - visible with data', '2024_bukanmakanan2024': 'inline label - visible with data', });
 lyr_LapakGIS_Batas_Kabupaten_2024_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
